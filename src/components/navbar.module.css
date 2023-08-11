@@ -1,0 +1,8 @@
+.navbar{
+    position: relative;
+    width: 100vw;
+    border: 1px solid white; 
+}
+.nav{
+    height: 80px;
+}
