@@ -1,8 +1,40 @@
 .navbar{
     position: relative;
     width: 100vw;
-    border: 1px solid white; 
+    
 }
 .nav{
+    padding:20px  20px  20px 0;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.logo{
+   display: flex;
+   justify-content: center;
+    background-color: whitesmoke;
+    width: 150px;
+}
+
+.logoImg{
+    width: 100px;
+    height:80px;
+    
+}
+.navMenu{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navItem{
+    list-style: none;
+    
+}
+.navItem a{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
