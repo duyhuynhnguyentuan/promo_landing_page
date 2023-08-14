@@ -23,6 +23,7 @@
     
 }
 .navMenu{
+    padding-right: 50px;
     width: 300px;
     display: flex;
     justify-content: space-between;

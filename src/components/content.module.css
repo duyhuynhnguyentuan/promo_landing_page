@@ -1,0 +1,38 @@
+.container{
+    width: 105vw;
+    height:80vh;
+    color:whitesmoke;
+  
+}
+
+.imgLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fenderLogo{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 600px;
+    filter: opacity(.4) blur(4px);
+}
+.mainContent{
+    height: 100%;
+    padding: 0 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10; 
+}
+.mainContent h1{
+    font-size: 4rem;
+}
+.fenderguitar{
+    width: 550px;
+    transform: rotate(310deg);
+}
