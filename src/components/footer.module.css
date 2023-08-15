@@ -1,0 +1,25 @@
+.footerContainer{
+    width: 100vw;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+.copy{
+
+}
+.copy p{
+    font-size: 10px;
+    opacity: .6;
+}
+.logoContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+.logoContainer a{
+    text-decoration: none;
+    color: whitesmoke;
+}
