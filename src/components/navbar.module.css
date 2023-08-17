@@ -1,6 +1,7 @@
 .navbar{
     position: relative;
     width: 100vw;
+    overflow-x: hidden;
     
 }
 .nav{
@@ -9,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 .logo{
    display: flex;
@@ -38,4 +40,70 @@
     color: whitesmoke;
 
 }
+.hamburgerMenu{
+    display: none;
+}
+.crossMenu{
+    display: none;
+}
 
+@media screen and (max-width:768px){
+    .nav{
+        padding: 0 20px 0 20px;
+        overflow: hidden;
+    }
+    .navMenu{
+        display: none;
+        border: 1px solid white;
+    }
+    .navItem{
+        margin-block: 1rem;
+    }
+    .logoImg{
+        width: 100px;
+        position: relative;
+    }
+    .logo{
+        background-color: unset;
+    }
+    .hamburgerMenu{
+        display: block;
+    }
+    .hamburgerMenu button{
+        background: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .hamburgerMenuIcon{
+        color: whitesmoke;
+        font-size: 2rem;
+    }
+    .crossMenu{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .crossMenu button{
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+    .crossMenuIcon{
+        color: whitesmoke;
+        font-size: 2rem;
+    }
+    .activeMenu{
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        display: block;
+        width: 200px;
+        text-align: center;
+        background-color: black;
+        z-index: 300;
+    }
+} 

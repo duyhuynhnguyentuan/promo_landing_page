@@ -23,3 +23,15 @@
     text-decoration: none;
     color: whitesmoke;
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+        padding: 0 20px 0 20px;
+    }
+    .copy{
+        font-size: 10px;
+    }
+    .logoContainer{
+        width: 100px;
+    }
+}

@@ -20,11 +20,14 @@
     width: 600px;
     filter: opacity(.4) blur(4px);
 }
+.fenderLogo::selection{
+    background:transparent;
+}
 .mainContent{
     height: 100%;
-    padding: 0 50px 0 50px;
-    display: flex;
-    justify-content: space-between;
+    padding: 0 0 0 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px,1fr));
     align-items: center;
     position: relative;
     z-index: 10; 
@@ -35,4 +38,27 @@
 .fenderguitar{
     width: 550px;
     transform: rotate(310deg);
+}
+@media screen and (max-width: 1024px){
+    .mainContent{
+        position:relative;
+    }
+    .fenderLogo{
+        width: 450px
+    }
+    .title h1{
+        font-size: 3rem;
+        text-shadow: 2px 1px 5px rgba(0,0,0,.8);
+        z-index: 100;
+
+    }
+    .fenderguitar{
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%) rotate(310deg);
+        width:490px;
+        z-index: -100;
+    }
+
 }

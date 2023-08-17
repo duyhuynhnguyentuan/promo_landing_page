@@ -1,6 +1,10 @@
 import styles from "./navbar.module.css"
 import {motion} from "framer-motion"
+import { useState } from "react";
+import {IoMdClose} from 'react-icons/io'
+import {FiMenu} from 'react-icons/fi'
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const animationNavbar = {
     hidden: {
       opacity: 0,
@@ -65,7 +69,10 @@ const Navbar = () => {
             animate="visible"
             />
         </div>
-        <motion.ul className={styles.navMenu}
+        <motion.ul 
+        className={[isMenuOpen ? styles.activeMenu : [], styles.navMenu].join(
+          " "
+        )}
         variants={animationNavbar}
         initial="hidden"
         animate="visible"
@@ -78,7 +85,17 @@ const Navbar = () => {
             <motion.li className={styles.navItem}
                variants={animationNavItem}
             ><a href="#">About</a></motion.li>
+            <div className={styles.crossMenu}>
+              <button onClick={()=>setIsMenuOpen(false)}>
+                <IoMdClose classname={styles.crossMenuIcon}/>
+              </button>
+            </div>
         </motion.ul>
+        <div className={styles.hamburgerMenu}>
+          <button onClick={()=>setIsMenuOpen(true)}>
+            <FiMenu className={styles.hamburgerMenuIcon}/>
+          </button>
+        </div>
     </motion.nav>
     </div>
     

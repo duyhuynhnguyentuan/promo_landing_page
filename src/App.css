@@ -8,3 +8,8 @@ body{
   background-color: #080808;
   
 }
+@media screen and (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
+}
